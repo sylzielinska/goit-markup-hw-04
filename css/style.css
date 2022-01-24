@@ -16,10 +16,9 @@ body {
   line-height: 1.87;
   color: #ffffff;
   cursor: pointer;
+  background: #2196f3;
 }
-.modal-button:hover {
-  color: #2196f3;
-}
+
 .contact {
   font-weight: 500;
   font-size: 14px;
@@ -35,6 +34,9 @@ body {
   line-height: 171%;
   letter-spacing: 0.03em;
   color: #757575;
+}
+.main-front {
+  background: #2f303a;
 }
 /* =======END COMPONENTS=== */
 /* HEADER */
@@ -78,7 +80,7 @@ h1 {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  /*color: #ffffff*/
+  color: #ffffff;
 }
 
 h2 {
@@ -104,7 +106,9 @@ h4 {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-
+.our-team {
+  background: #f5f4fa;
+}
 .employee-name {
   font-weight: 500;
   font-size: 16px;
@@ -134,4 +138,30 @@ ul {
 .contact-top {
   font-style: normal;
   font-size: 14px;
+}
+.address {
+  color: #ffffff;
+}
+
+footer {
+  background: #2f303a;
+}
+.footer-contact {
+  text-decoration: none;
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 171%;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.portfolio-button {
+  background: #f5f4fa;
+  border-radius: 4px;
+}
+.portfolio-button:hover {
+  color: #ffffff;
+  background: #2196f3;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
