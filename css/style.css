@@ -6,6 +6,7 @@
 
 body {
   font-family: var(--main-font);
+  background: #E5E5E5;
 }
 /* =======COMPONENTS======= */
 
@@ -17,6 +18,12 @@ body {
   color: #ffffff;
   cursor: pointer;
   background: #2196f3;
+  align-items: center;
+  justify-content: center;
+	text-align: center;
+  display: inline-block;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
 .contact {
@@ -36,18 +43,37 @@ body {
   color: #757575;
 }
 .main-front {
+  display: flex;
+  flex-direction: column;
   background: #2f303a;
+  height: 600px;
+  width: 1600px;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.header .container {
+  display: flex;
 }
 /* =======END COMPONENTS=== */
 /* HEADER */
-.navigation-logo {
+.navigation-logo, .logo-bottom {
   font-family: Raleway;
   font-weight: bold;
   font-size: 26px;
   line-height: 31px;
   letter-spacing: 0.03em;
   color: #2196f3;
-  text-decoration: none;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  margin-right: 93px;
 }
 span {
   color: var(--main-color);
@@ -55,22 +81,52 @@ span {
 .navigation-list-link {
   color: var(--main-color);
 }
-.contact-top {
+.email,
+.phone {
   font-weight: 500;
   line-height: 16px;
   letter-spacing: 0.02em;
-  color: var(--main-color);
+  color: #757575;
 }
+
+.email {
+  margin-left: auto;
+  margin-right: 50px;
+}
+
 .navigation-list-link:hover,
 .navigation-list-link:focus,
 .contact:hover,
 .contact:focus,
-.contact-top:hover,
-.contact-top:focus {
+.email:hover,
+.email:focus,
+.phone:hover,
+.phone:focus {
   color: #2196f3;
+}
+.navigation-list-item,
+.email,
+.phone {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.navigation {
+  align-items: baseline;
+}
+
+.navigation-list {
+  display: flex;
+  list-style: none;
+}
+
+.navigation-list-item:not(:last-child) {
+  margin-right: 46px;
 }
 
 /* END HEADER */
+a {
+  text-decoration: none;
+}
 
 h1 {
   font-family: var(--main-color);
@@ -81,6 +137,10 @@ h1 {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
+  padding: 200px 0 30px;
+  width: 692px;
+  margin: 0 auto;
+  
 }
 
 h2 {
@@ -89,6 +149,7 @@ h2 {
   line-height: 42px;
   text-align: center;
   letter-spacing: 0.03em;
+  padding-bottom: 50px;
 }
 
 h3 {
@@ -99,15 +160,50 @@ h3 {
 }
 
 h4 {
-  font-family: Roboto;
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  padding-bottom: 10px;
 }
+h4:not(:last-child) {
+	padding-right: 30px;
+}
+
+.decription-lorem{
+  font-size: 14px;
+  line-height: 171%;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+.what-we-do-img {
+  padding-top:50px;
+}
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+
+ul{
+  list-style-type: none;
+}
+
+.section{
+  padding-top: 94px;
+	padding-bottom: 94px;
+}
+
 .our-team {
   background: #f5f4fa;
+  width: 1600px;
+}
+.team-person{
+  background-color: #ffffff;
+  margin-top: 50px;
 }
 .employee-name {
   font-weight: 500;
@@ -129,13 +225,18 @@ h4 {
   letter-spacing: 0.03em;
   color: #757575;
 }
-ul {
-  list-style-type: none;
+.separated-list{
+  margin: 0;
+  padding: 0;
+  display:flex;
+  justify-content: space-between;
 }
+
 
 .contact,
 .address,
-.contact-top {
+.email,
+.phone {
   font-style: normal;
   font-size: 14px;
 }
@@ -145,18 +246,39 @@ ul {
 
 footer {
   background: #2f303a;
+  width: 1600px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 .footer-contact {
-  text-decoration: none;
   font-family: Roboto;
   font-size: 14px;
   line-height: 171%;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+
+}
+.footer-item:not(:first-child){
+  padding-bottom: 9px;
+}
+.footer-item:first-child{
+  padding-top:60px;
+  padding-bottom: 20px;
+}
+.footer-item:last-child{
+  padding-bottom: 60px;
+}
+.footer-item{
+  list-style: none;
+}
+.span-bottom{
+  color: #ffffff;
 }
 .portfolio-button {
-  background: #f5f4fa;
+  background: #F5F4FA;
   border-radius: 4px;
+  width: 121px;
+  height: 38px;
 }
 .portfolio-button:hover {
   color: #ffffff;
@@ -164,4 +286,12 @@ footer {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
+}
+.portfolio-button:not(:last-child){
+  padding-right: 8px;
+}
+.portfolio-menu{
+  display:flex;
+  justify-content: center;
+  list-style: none;
 }
