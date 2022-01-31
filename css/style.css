@@ -45,12 +45,14 @@ body {
 .main-front {
   display: flex;
   flex-direction: column;
-  background: #2f303a;
   height: 600px;
-  width: 1600px;
   align-items: center;
   margin: 0 auto;
   justify-content: center;
+  background-image: url("../images/background.jpg"),
+  linear-gradient(
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4));
 }
 
 .container {
@@ -61,6 +63,7 @@ body {
 
 .header .container {
   display: flex;
+  align-items: center;
 }
 /* =======END COMPONENTS=== */
 /* HEADER */
@@ -125,6 +128,16 @@ span {
   margin-right: 46px;
 }
 
+.icon-header-mail {
+  width: 16px;
+  height: 12px;
+  background: #757575;
+}
+.icon-header-phone {
+  width: 10px;
+  height: 16px;
+  background-color: #757575;
+}
 /* END HEADER */
 a {
   text-decoration: none;
@@ -179,7 +192,20 @@ h4 {
 h4:not(:last-child) {
   padding-right: 30px;
 }
+.lorem-icon-box{
+  display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 120px;
+	background-color: #f5f4fa;
+	margin-bottom: 30px;
+	border-radius: 4px;
+}
 
+.lorem-icon{
+  width: 70px;
+	height: 70px;
+}
 .decription-lorem {
   font-size: 14px;
   line-height: 171%;
@@ -189,7 +215,6 @@ h4:not(:last-child) {
 .what-we-do-img {
   padding-top: 50px;
 }
-
 
 ul {
   list-style-type: none;
@@ -207,6 +232,9 @@ ul {
 .team-person {
   background-color: #ffffff;
   margin-top: 50px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+		0px 2px 1px rgba(0, 0, 0, 0.2);
+	border-radius: 0px 0px 4px 4px;
 }
 .employee-name {
   font-weight: 500;
@@ -295,8 +323,6 @@ footer {
   border-radius: 4px;
 }
 
-
-
 .portfolio-category:not(:last-child) {
   padding-right: 8px;
 }
@@ -310,12 +336,16 @@ footer {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-   justify-content:space-between;
+  justify-content: space-between;
 }
 
-.portfolio-item2{
-  margin-top:30px;
+.portfolio-item2 {
+  margin-top: 30px;
 }
-.decription-portfolio{
-  padding-left:24px;
+.decription-portfolio {
+  padding-left: 24px;
 }
+
+.portfolio-item:hover {
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+		1px 4px 6px rgba(0, 0, 0, 0.16);
